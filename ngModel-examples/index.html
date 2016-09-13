@@ -1,0 +1,40 @@
+<html ng-app="ngModelExamples">
+
+    <head>
+        <title>ngModel Examples App</title>
+        <script src='angular.js'></script>
+        <script src='app.js'></script>
+    </head>
+
+    <body ng-controller="ExamplesCtrl">
+        <h1>ngModel Examples App</h1>
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+        <p>Textbox: <input type="text" ng-change="textboxChange()" ng-model="textString"></input></p>
+
+        
+        <p>Checkbox: <input type="checkbox" ng-model="booleanValue"></input></p>
+        <p>Date: <input type="date" ng-model="dateValue"></input></p>
+        <p>Radio: 
+            <input type="radio" ng-model="radioValue" value="opt1">Option 1</input>
+            <input type="radio" ng-model="radioValue" value="opt2">Option 2</input>
+            <input type="radio" ng-model="radioValue" value="opt3">Option 3</input>
+            
+            
+            
+        </p>
+        <div>
+            <p>Text input: {{textString}}</p>
+            <p>Checkbox input: {{booleanValue}}</p>
+            <p>Date input: {{dateValue}}</p>
+            <p>Radio input: {{radioValue}}</p>
+        </div>
+
+
+    </body>
+
+</html>
